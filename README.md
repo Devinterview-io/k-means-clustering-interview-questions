@@ -112,15 +112,11 @@ In k-Means clustering, **centroids** represent data points that act as the cente
 
 Mathematically, the centroid of a cluster $C_k$ having $n_k$ data points in a $d$-dimensional space is given by the **mean** of the data points in that cluster:
 
-$$
-\mathbf{c}_k = \frac{1}{n_k} \sum_{\mathbf{x} \in C_k} \mathbf{x}
-$$
+![equation](https://latex.codecogs.com/gif.latex?\mathbf{c}_k&space;=&space;\frac{1}{n_k}&space;\sum_{\mathbf{x}&space;\in&space;C_k}&space;\mathbf{x})
 
 The algorithm aims to find centroids that minimize the within-cluster sum of squares (WCSS), which is also known as **inertia**. This is measured by:
 
-$$
-\text{WCSS} = \sum_{k=1}^{K} \sum_{\mathbf{x} \in C_k} \lVert \mathbf{x} - \mathbf{c}_k \rVert^2
-$$
+![equation](https://latex.codecogs.com/gif.latex?\text{WCSS}&space;=&space;\sum_{k=1}^{K}&space;\sum_{\mathbf{x}&space;\in&space;C_k}&space;\lVert&space;\mathbf{x}&space;-&space;\mathbf{c}_k&space;\rVert^2)
 
 The smaller this value, the better the clustering.
 <br>
